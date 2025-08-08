@@ -1,0 +1,17 @@
+[package]
+name = "rustools"
+version = "0.1.0"
+description = "基于rust pyo3开发python扩展"
+authors = ["lizhenhua <emailofcarp@163.com>"]
+edition = "2024"
+
+[lib]
+name = "rustools"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.25.0"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1

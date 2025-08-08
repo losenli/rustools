@@ -3,7 +3,9 @@ name = "rustools"
 version = "0.1.0"
 description = "基于rust pyo3开发python扩展"
 authors = ["lizhenhua <emailofcarp@163.com>"]
+repository = "https://github.com/losenli/rustools"
 edition = "2024"
+license = "MIT"
 
 [lib]
 name = "rustools"

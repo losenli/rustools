@@ -6,7 +6,8 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dynamic = ["version"]
+dynamic = ["version", "description", "readme", "license"]
+dependencies = []
 
 [tool.maturin]
 python-source = "python"
@@ -20,6 +21,7 @@ build-backend = "maturin"
 
 [dependency-groups]
 dev = [
+    "maturin>=1.9.3",
     "pytest>=8.4.1",
 ]
 
@@ -32,5 +34,5 @@ target-version = "py39"
 testpaths = ["tests"]
 
 [[tool.uv.index]]
-url = "https://mirrors.aliyun.com/pypi/simple/"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 default = true
